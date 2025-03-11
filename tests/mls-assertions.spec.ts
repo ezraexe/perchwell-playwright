@@ -53,9 +53,9 @@ test (`MLS page test and assertions`, async ({ page }) => {
     await expect(submitButton).toBeVisible();
     await submitButton.click();
 
-    await expect(page).toHaveURL(`https://www.perchwell.com/mls`); // definitely not the best way to check if the form was submitted 
+    await expect(page).toHaveURL(`https://www.perchwell.com/mls`); 
+    // definitely not the best way to check if the form was submitted 
     // because I dont want to actually submit the form, I don't know if the submit button redirects to a new URL or not 
-    
     
 
     
